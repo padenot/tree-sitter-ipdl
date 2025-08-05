@@ -1,0 +1,945 @@
+[
+  {
+    "type": "array_suffix",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "attribute",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_value",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attribute_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attribute_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "compress_annotation",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "include_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "manager_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "manages_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "message_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_list",
+          "named": true
+        },
+        {
+          "type": "compress_annotation",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "message_type",
+          "named": true
+        },
+        {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "returns_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "message_direction",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "message_direction_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "message_declaration",
+          "named": true
+        },
+        {
+          "type": "message_direction",
+          "named": true
+        },
+        {
+          "type": "preprocessor_directive",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "message_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "namespace_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "namespace_declaration",
+          "named": true
+        },
+        {
+          "type": "preprocessor_directive",
+          "named": true
+        },
+        {
+          "type": "protocol_declaration",
+          "named": true
+        },
+        {
+          "type": "struct_declaration",
+          "named": true
+        },
+        {
+          "type": "union_declaration",
+          "named": true
+        },
+        {
+          "type": "using_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_suffix",
+          "named": true
+        },
+        {
+          "type": "attribute_list",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "nullable_suffix",
+          "named": true
+        },
+        {
+          "type": "type_modifiers",
+          "named": true
+        },
+        {
+          "type": "type_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "parameter",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "preprocessor_directive",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "protocol_body_item",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "manager_statement",
+          "named": true
+        },
+        {
+          "type": "manages_statement",
+          "named": true
+        },
+        {
+          "type": "message_declaration",
+          "named": true
+        },
+        {
+          "type": "message_direction_block",
+          "named": true
+        },
+        {
+          "type": "preprocessor_directive",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "protocol_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_list",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "protocol_body_item",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "returns_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "parameter_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "include_statement",
+          "named": true
+        },
+        {
+          "type": "namespace_declaration",
+          "named": true
+        },
+        {
+          "type": "preprocessor_directive",
+          "named": true
+        },
+        {
+          "type": "protocol_declaration",
+          "named": true
+        },
+        {
+          "type": "struct_declaration",
+          "named": true
+        },
+        {
+          "type": "union_declaration",
+          "named": true
+        },
+        {
+          "type": "using_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "struct_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_list",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "preprocessor_directive",
+          "named": true
+        },
+        {
+          "type": "struct_field",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "struct_field",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_suffix",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "nullable_suffix",
+          "named": true
+        },
+        {
+          "type": "type_modifiers",
+          "named": true
+        },
+        {
+          "type": "type_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_modifiers",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "type_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "type_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "union_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_list",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "preprocessor_directive",
+          "named": true
+        },
+        {
+          "type": "union_member",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "union_member",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_suffix",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "nullable_suffix",
+          "named": true
+        },
+        {
+          "type": "type_modifiers",
+          "named": true
+        },
+        {
+          "type": "type_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "using_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_list",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "type_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "#elif",
+    "named": false
+  },
+  {
+    "type": "#else",
+    "named": false
+  },
+  {
+    "type": "#endif",
+    "named": false
+  },
+  {
+    "type": "#if",
+    "named": false
+  },
+  {
+    "type": "#ifdef",
+    "named": false
+  },
+  {
+    "type": "#ifndef",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": "/*",
+    "named": false
+  },
+  {
+    "type": "//",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "ByteBuf",
+    "named": false
+  },
+  {
+    "type": "Endpoint",
+    "named": false
+  },
+  {
+    "type": "FileDescriptor",
+    "named": false
+  },
+  {
+    "type": "ManagedEndpoint",
+    "named": false
+  },
+  {
+    "type": "MoveOnly",
+    "named": false
+  },
+  {
+    "type": "RacyUndeletedActors",
+    "named": false
+  },
+  {
+    "type": "RefCounted",
+    "named": false
+  },
+  {
+    "type": "Shmem",
+    "named": false
+  },
+  {
+    "type": "UniquePtr",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "any",
+    "named": false
+  },
+  {
+    "type": "async",
+    "named": false
+  },
+  {
+    "type": "bool",
+    "named": false
+  },
+  {
+    "type": "both",
+    "named": false
+  },
+  {
+    "type": "child",
+    "named": false
+  },
+  {
+    "type": "class",
+    "named": false
+  },
+  {
+    "type": "compositor",
+    "named": false
+  },
+  {
+    "type": "compress",
+    "named": false
+  },
+  {
+    "type": "compressall",
+    "named": false
+  },
+  {
+    "type": "const",
+    "named": false
+  },
+  {
+    "type": "content",
+    "named": false
+  },
+  {
+    "type": "control",
+    "named": false
+  },
+  {
+    "type": "double",
+    "named": false
+  },
+  {
+    "type": "float",
+    "named": false
+  },
+  {
+    "type": "from",
+    "named": false
+  },
+  {
+    "type": "gmplugin",
+    "named": false
+  },
+  {
+    "type": "gpu",
+    "named": false
+  },
+  {
+    "type": "high",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "include",
+    "named": false
+  },
+  {
+    "type": "input",
+    "named": false
+  },
+  {
+    "type": "inside_cpow",
+    "named": false
+  },
+  {
+    "type": "inside_sync",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": false
+  },
+  {
+    "type": "int16_t",
+    "named": false
+  },
+  {
+    "type": "int32_t",
+    "named": false
+  },
+  {
+    "type": "int64_t",
+    "named": false
+  },
+  {
+    "type": "int8_t",
+    "named": false
+  },
+  {
+    "type": "interrupt",
+    "named": false
+  },
+  {
+    "type": "intr",
+    "named": false
+  },
+  {
+    "type": "main",
+    "named": false
+  },
+  {
+    "type": "manager",
+    "named": false
+  },
+  {
+    "type": "manages",
+    "named": false
+  },
+  {
+    "type": "mediumhigh",
+    "named": false
+  },
+  {
+    "type": "namespace",
+    "named": false
+  },
+  {
+    "type": "normal",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "nsCString",
+    "named": false
+  },
+  {
+    "type": "nsID",
+    "named": false
+  },
+  {
+    "type": "nsString",
+    "named": false
+  },
+  {
+    "type": "nsresult",
+    "named": false
+  },
+  {
+    "type": "nullable",
+    "named": false
+  },
+  {
+    "type": "nullable_suffix",
+    "named": true
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "or",
+    "named": false
+  },
+  {
+    "type": "parent",
+    "named": false
+  },
+  {
+    "type": "passback",
+    "named": false
+  },
+  {
+    "type": "prio",
+    "named": false
+  },
+  {
+    "type": "protocol",
+    "named": false
+  },
+  {
+    "type": "rdd",
+    "named": false
+  },
+  {
+    "type": "refcounted",
+    "named": false
+  },
+  {
+    "type": "returns",
+    "named": false
+  },
+  {
+    "type": "socket",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": true
+  },
+  {
+    "type": "struct",
+    "named": false
+  },
+  {
+    "type": "sync",
+    "named": false
+  },
+  {
+    "type": "uint16_t",
+    "named": false
+  },
+  {
+    "type": "uint32_t",
+    "named": false
+  },
+  {
+    "type": "uint64_t",
+    "named": false
+  },
+  {
+    "type": "uint8_t",
+    "named": false
+  },
+  {
+    "type": "union",
+    "named": false
+  },
+  {
+    "type": "using",
+    "named": false
+  },
+  {
+    "type": "virtual",
+    "named": false
+  },
+  {
+    "type": "vr",
+    "named": false
+  },
+  {
+    "type": "vsync",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
